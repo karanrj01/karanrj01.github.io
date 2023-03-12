@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^2.1.2/dist/tailwind.min.css">
+</head>
+<body>
+  <header>
+    <header class="bg-white">
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+          <a href="#" class="font-bold text-lg">Portfolio</a>
+      
+          <ul class="flex">
+            <li class="mx-2"><a href="#" class="text-gray-600 hover:text-black">Home</a></li>
+            <li class="mx-2"><a href="#" class="text-gray-600 hover:text-black">About</a></li>
+            <li class="mx-2"><a href="#" class="text-gray-600 hover:text-black">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      
+  </header>
+
+    <main>
+        <section class="bg-gray-100 py-20">
+          <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row md:items-center">
+              <div class="md:w-1/2">
+                <h1 class="text-4xl font-bold mb-4">Karan R Jayan</h1>
+                <p class="text-gray-700 mb-4">A skilled, competent, and diligent individual
+                    pursuing an opportunity to establish a career in
+                    Artificial Intelligence. Seeking to enhance and
+                    refine my technical knowledge in Python and
+                    Deep Learning.
+                    </p>
+                <a href="#" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                  View Portfolio
+                </a>
+              </div>
+              <div class="md:w-1/2">
+                <img src= '..\images\picture.png' alt="John Doe" class="rounded-lg shadow-md">
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="py-20">
+            <div class="container mx-auto px-4">
+              <h2 class="text-3xl font-bold mb-4">Featured Projects</h2>
+          
+              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                  <img src="https://www.stardog.com/img/hiw/based-on-graph.gif?_cchid=e3e923b72d9d7382a58a565ad431ae46" alt="Project 1" class="w-full h-48 object-cover">
+                  <div class="p-4">
+                    <h3 class="font-bold text-xl mb-2">Knowledge Discovery and Visualization of
+                        UMLS based on Complex Network Analysis,</h3>
+                    <p class="text-gray-700 mb-4">Knowledge Graph implementation of Unified
+                        Medical Language System(UMLS), maintained by
+                        American National Library of Medicine(NLM).
+                        Used the NoSQL Graph database Neo4j to create a
+                        general framework to formulate queries to retrieve
+                        semantic information.
+                        </p>
+                    <a href="#" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">View Project</a>
+              </div>
+            </div>
+          
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+              <img src="https://camo.githubusercontent.com/773d2b494242e988b627634f016969c990f80289fd385c86e958c952a8f7775e/68747470733a2f2f686162726173746f726167652e6f72672f776562742f62632f65672f67382f6263656767387a6467642d636f2d6c69703668786e3937366a646d2e6a706567" alt="Project 2" class="w-full h-48 object-cover">
+              <div class="p-4">
+                <h3 class="font-bold text-xl mb-2">People Image Segmentation using U-Net
+                </h3>
+                <p class="text-gray-700 mb-4">Built an Image Segmentation Deep Learning
+                    model which uses the CNN technique, U-Net and
+                    outputs a mask over people detected . Trained in a
+                    small dataset of size 5GB and received an accuracy
+                    of 83%.</p>
+                <a href="#" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                  View Project
+                </a>
+              </div>
+            </div>
+          
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+              <img src="https://m.media-amazon.com/images/I/71Oq0FFiH1L._SL1500_.jpg" alt="Project 3" class="w-full h-48 object-cover">
+              <div class="p-4">
+                <h3 class="font-bold text-xl mb-2">Path Finding Rover using Image Processing in
+                    ROS</h3>
+                <p class="text-gray-700 mb-4">Autonomous path-finding rover which
+                    implements non-heuristic contour-recognizing
+                    algorithm for arrow orientation recognition.
+                    Makes use of python, computer vision and Robotic
+                    Operating System(ROS) run on top of Raspberry Pi
+                    4.</p>
+                <a href="#" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                  View Project
+                </a>
+              </div>
+            </div>
+          </div>
+            </div>
+          </section>
+
+
+      <section id="contact" class="bg-gray-200 py-12">
+        <div class="container mx-auto">
+          <h2 class="text-3xl font-semibold mb-6">Contact Me</h2>
+          <form action="#" class="max-w-lg mx-auto">
+            <div class="mb-4">
+              <label for="name" class="block text-gray-700 font-medium mb-2">Name</label>
+              <input type="text" id="name" name="name" class="border border-gray-400 p-2 w-full">
+            </div>
+      
+            <div class="mb-4">
+              <label for="email" class="block text-gray-700 font-medium mb-2">Email</label>
+              <input type="email" id="email" name="email" class="border border-gray-400 p-2 w-full">
+            </div>
+      
+            <div class="mb-4">
+              <label for="message" class="block text-gray-700 font-medium mb-2">Message</label>
+              <textarea id="message" name="message" rows="4" class="border border-gray-400 p-2 w-full"></textarea>
+            </div>
+      
+            <button type="submit" class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 focus:outline-none focus:bg-blue-600">Send Message</button>
+          </form>
+        </div>
+      </section>
+      
+      
+  </main>
+
+  <footer class="bg-gray-900 text-white py-4">
+    <div class="container mx-auto flex justify-between items-center px-4">
+      <p>Copyright &copy; 
+        <script>document.write(new Date().getFullYear())</script> 
+        All rights reserved | Made with <i class="fa fa-heart text-red-500"></i> by Karan R Jayan</p>
+      <ul class="flex">
+        <li>
+          <a href="#" class="text-white hover:text-blue-500 hover:underline ml-4">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="text-white hover:text-blue-500 hover:underline ml-4">
+            <i class="fab fa-github"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="text-white hover:text-blue-500 hover:underline ml-4">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+  
+  <!-- Fontawesome CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+  </body>
+  </html>
